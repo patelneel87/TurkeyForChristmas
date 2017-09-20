@@ -1,0 +1,18 @@
+import java.util.Scanner; 
+public class TurkeyForChristmas {
+
+	
+	public static void main(String[] args) {
+		Scanner kb = new Scanner(System.in);
+		System.out.println("How many kilos is the turkey?");
+		String answer = kb.nextLine();
+		double weight = Double.parseDouble(answer);
+		double cookingtime = ((weight*2.2*20)/60);
+		double cookingrounded = (Math.round(cookingtime*100.0));
+		
+		System.out.println("The cooking time for your turkey is: ");
+		System.out.printf("%.2f %5s", cookingrounded/100, "hours");
+		
+	}
+
+}
